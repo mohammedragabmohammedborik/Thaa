@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/reserve_exmine"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+
+        android:src="@drawable/ic_undraw_mathematics_4otb"
+        />
+
+
+    <com.rey.material.widget.Button
+        android:id="@+id/button_reserve_exmainr"
+        android:layout_width="match_parent"
+        android:text="حجز كشف"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/edit_text_size"
+        android:fontFamily="@font/droidkufi_bold"
+        android:background="@drawable/ripple_login_button"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/large_margin_horizontal"
+        android:layout_marginLeft="@dimen/large_margin_horizontal"
+        android:layout_marginTop="@dimen/large_vertical"
+
+        />
+
+    <ImageView
+        android:id="@+id/free_quest"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_undraw_true_friends_c94g"
+        />
+
+
+    <com.rey.material.widget.Button
+        android:id="@+id/button_questionare"
+        android:layout_width="match_parent"
+        android:text="@string/free_questionare"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/edit_text_size"
+        android:fontFamily="@font/droidkufi_bold"
+        android:background="@drawable/ripple_login_button"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/large_margin_horizontal"
+        android:layout_marginLeft="@dimen/large_margin_horizontal"
+        android:layout_marginTop="@dimen/large_vertical"
+
+        />
+</LinearLayout>

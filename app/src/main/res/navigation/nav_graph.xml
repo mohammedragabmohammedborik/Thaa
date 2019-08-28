@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.dtag.thaa.home_activity.login_fragment.LoginFragment"
+        android:label="login_activity"
+        tools:layout="@layout/login_activity" >
+        <action
+            android:id="@+id/torgister"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/tohome"
+            app:destination="@+id/homeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/toteacherhome"
+            app:destination="@id/teacherAcitvity" />
+        <action
+            android:id="@+id/toregistertech"
+            app:destination="@id/registerTeacherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dtag.thaa.home_activity.homefragment.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/reserve_examine"
+            app:destination="@id/reserveExamine" />
+        <action
+            android:id="@+id/free_question"
+            app:destination="@id/freeQuestionare" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.dtag.thaa.home_activity.registerfragment.RegisterFragment"
+        android:label="register_data"
+        tools:layout="@layout/register_data" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/tohome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reserveExamine"
+        android:name="com.dtag.thaa.home_activity.reserve_examine.ReserveExamine"
+        android:label="reserve_examine"
+        tools:layout="@layout/reserve_examine" >
+        <action
+            android:id="@+id/toavailablet"
+            app:destination="@id/availbleTeacher"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/freeQuestionare"
+        android:name="com.dtag.thaa.home_activity.free_questionare.FreeQuestionare"
+        android:label="free_questionare"
+        tools:layout="@layout/free_questionare" >
+        <action
+            android:id="@+id/chatmessage"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/availbleTeacher"
+        android:name="com.dtag.thaa.home_activity.availableteacher.AvailbleTeacher"
+        android:label="available_teacher"
+        tools:layout="@layout/available_teacher" >
+        <action
+            android:id="@+id/ctoconfirm"
+            app:destination="@id/confirmReserveFra"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmReserveFra"
+        android:name="com.dtag.thaa.home_activity.confirmreserve.ConfirmReserveFra"
+        android:label="confirm_layout"
+        tools:layout="@layout/confirm_layout" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.dtag.thaa.home_activity.chat.ChatFragment"
+        android:label="chat_message"
+        tools:layout="@layout/chat_message" />
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.dtag.thaa.home_activity.user_profile.UserProfile"
+        android:label="main_user_profile"
+        tools:layout="@layout/main_user_profile" />
+    <activity
+        android:id="@+id/teacherAcitvity"
+        android:name="com.dtag.thaa.home_activity.teacheractivity.TeacherAcitvity"
+        android:label="activity_teacher_acitvity"
+        tools:layout="@layout/activity_teacher_acitvity" />
+    <fragment
+        android:id="@+id/registerTeacherFragment"
+        android:name="com.dtag.thaa.home_activity.register_teacher.RegisterTeacherFragment"
+        android:label="register_teacher"
+        tools:layout="@layout/register_teacher" >
+        <action
+            android:id="@+id/toteacherhome"
+            app:destination="@id/teacherAcitvity" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutCompany"
+        android:name="com.dtag.thaa.home_activity.AboutCompany"
+        android:label="about_company"
+        tools:layout="@layout/about_company" />
+    <fragment
+        android:id="@+id/aboutCompany2"
+        android:name="com.dtag.thaa.home_activity.Policiy"
+        android:label="about_company"
+        tools:layout="@layout/about_company" />
+</navigation>

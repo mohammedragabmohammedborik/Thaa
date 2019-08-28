@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#0C7D6B</color>
+    <color name="colorAccent">#008577</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="normal_color_button">#4FA553</color>
+
+    <color name="li_whight">#EBE9E9</color>
+    <color name="white_color">#FFFFFF</color>
+
+    <color name="snackbar">#C60023</color>
+    <color name="progressl">#C60023</color>
+    <color name="black_color">#000000</color>
+
+    <color name="dark_text_color">#118069</color>
+    <color name="back_ground_login_fragment">#E6E6E6</color>
+    <color name="activerate">#FFC107</color>
+
+    <color name="bg_frame_profile">#8FD29A</color>
+
+
+
+
+
+</resources>

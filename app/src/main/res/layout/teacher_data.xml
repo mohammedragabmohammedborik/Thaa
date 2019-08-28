@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_login_fragment"
+    android:fitsSystemWindows="true"
+
+    android:layoutDirection="rtl">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_ground_login_fragment"
+
+        android:layoutDirection="rtl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/user_name"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
+                android:background="@drawable/bg_edittext_profile"
+                android:textColorHint="@color/dark_text_color"
+                android:fontFamily="@font/cairo_regular"
+                android:textSize="@dimen/edit_text_size"
+                android:padding="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/dark_text_color"
+                android:layout_marginTop="@dimen/secondary_vertical_space"
+
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/id_text"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
+                android:background="@drawable/bg_edittext_profile"
+                android:textColorHint="@color/dark_text_color"
+                android:fontFamily="@font/cairo_regular"
+                android:textSize="@dimen/edit_text_size"
+                android:padding="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/dark_text_color"
+                android:layout_marginTop="@dimen/secondary_vertical_space"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_text"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
+                android:background="@drawable/bg_edittext_profile"
+                android:textColorHint="@color/dark_text_color"
+                android:fontFamily="@font/cairo_regular"
+                android:textSize="@dimen/edit_text_size"
+                android:padding="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/dark_text_color"
+                android:layout_marginTop="@dimen/secondary_vertical_space"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobile_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_text"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
+                android:background="@drawable/bg_edittext_profile"
+                android:textColorHint="@color/dark_text_color"
+                android:fontFamily="@font/cairo_regular"
+                android:textSize="@dimen/edit_text_size"
+                android:padding="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/dark_text_color"
+                android:layout_marginTop="@dimen/secondary_vertical_space"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                />
+            <TextView
+                android:id="@+id/text_city"
+                android:text="المدينة"
+                android:textSize="@dimen/edit_text_size"
+                android:fontFamily="@font/cairo_regular"
+                android:textColor="@color/dark_text_color"
+                android:padding="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/city_id"
+
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/dark_text_color"
+                android:layout_marginTop="@dimen/secondary_vertical_space"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <TextView
+                android:id="@+id/text_village"
+                android:text="الحي"
+                android:textSize="@dimen/edit_text_size"
+                android:fontFamily="@font/cairo_regular"
+                android:textColor="@color/dark_text_color"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:padding="4dp"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/village_id"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:padding="4dp"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/dark_text_color"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="@dimen/secondary_vertical_space"
+                />
+
+
+            <TextView
+                android:id="@+id/cources"
+                android:text="الدورات التدريبية"
+                android:textSize="18sp"
+                android:fontFamily="@font/cairo_regular"
+                android:textColor="@color/dark_text_color"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+
+
+                android:padding="4dp"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@color/normal_color_button"
+
+                app:cardElevation="8dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/normal_color_button"
+
+                    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@color/normal_color_button"
+
+                    >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="الاسم"
+                    android:textColor="@color/white_color"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/droidkufi_regular"
+                    android:layout_marginRight="8dp"
+
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="المدة"
+                    android:textColor="@color/white_color"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/droidkufi_regular"
+                    android:layout_marginRight="8dp"
+
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="مكان الأقامة"
+                    android:textColor="@color/white_color"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/droidkufi_regular"
+                    android:layout_marginRight="8dp"
+
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:textColor="@color/white_color"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/droidkufi_regular"
+                    android:layout_marginRight="8dp"
+
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/reycycle_course"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"
+                        >
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+                    <com.rey.material.widget.Button
+                        android:id="@+id/add_course"
+                        android:layout_width="90dp"
+                        android:text="اضافة دورة"
+
+                        android:textColor="@color/black_color"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/droidkufi_regular"
+                        android:background="@drawable/ripple_bag_item"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/teacher_name"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_alignParentBottom="true"
+                        />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/modify_data"
+            android:layout_width="match_parent"
+            android:text="تعديل البيانات"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/edit_text_size"
+            android:fontFamily="@font/droidkufi_regular"
+            android:background="@drawable/ripple_login_button"
+
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/large_vertical"
+            android:layout_marginLeft="@dimen/large_vertical"
+            android:layout_marginTop="@dimen/large_vertical"
+
+            />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:background="@drawable/ripple_login_button"
+    android:layoutDirection="rtl"
+    android:id="@+id/available">
+
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_color"
+        android:paddingRight="@dimen/secondary_vertical_space"
+        android:fontFamily="@font/droidkufi_regular"
+        android:textSize="@dimen/edit_text_size"
+        android:text=" محمد احمد محمد"
+
+        android:layout_marginTop="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/status_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_color"
+        android:paddingRight="@dimen/secondary_vertical_space"
+        android:fontFamily="@font/droidkufi_regular"
+        android:textSize="10sp"
+        android:text="تم الانتهاء من الدورة"
+        android:layout_below="@+id/name_id"
+
+
+        />
+    <ImageView
+        android:id="@+id/delete_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_i"
+        android:layout_alignParentLeft="true"
+
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>

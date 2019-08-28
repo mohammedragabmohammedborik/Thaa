@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo_regular"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/edit_text_size"
+
+        android:paddingRight="4dp"
+
+        android:layout_marginTop="4dp"
+        android:id="@+id/spinner_textview"
+
+        />
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/spinnerview"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_below="@+id/spinner_textview"-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_height=".5dp"/>-->
+
+
+</RelativeLayout>

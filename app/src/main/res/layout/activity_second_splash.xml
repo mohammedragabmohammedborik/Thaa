@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@drawable/splach"
+    tools:context=".splashactivity2.SecondSplash">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/call_icon"
+        android:src="@drawable/image_s"
+    />
+    <ImageView
+        android:id="@+id/call_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_call_i"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_above="@+id/email_us"
+
+        />
+    <TextView
+        android:id="@+id/text_call_us"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/call_us"
+        android:fontFamily="@font/cairo_regular"
+        android:textColor="@color/white_color"
+        android:layout_above="@+id/email_us"
+        android:layout_marginLeft="8dp"
+
+        android:layout_toRightOf="@+id/call_icon"
+        />
+
+    <ImageView
+        android:id="@+id/email_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_at_email_icon"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="16dp"
+        />
+    <TextView
+        android:id="@+id/text_email_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_us"
+        android:fontFamily="@font/cairo_regular"
+        android:textColor="@color/white_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toRightOf="@+id/email_us"
+        />
+    <ImageView
+        android:id="@+id/twitt_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_twitter_i"
+        android:layout_marginTop="16dp"
+        android:layout_above="@+id/email_us"
+
+        android:layout_marginLeft="24dp"
+        android:layout_toLeftOf="@+id/text_twitte_us"
+
+        />
+    <TextView
+        android:id="@+id/text_twitte_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/twitt_us"
+        android:fontFamily="@font/cairo_regular"
+        android:textColor="@color/white_color"
+        android:layout_above="@+id/email_us"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="8dp"
+
+        />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:id="@+id/lin_next"
+         android:background="@drawable/ripple_text"
+
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="24dp"
+         android:layout_marginTop="16dp"
+
+         android:layout_marginLeft="24dp"
+         android:layout_marginBottom="16dp"
+         >
+         <ImageView
+             android:layout_width="wrap_content"
+             android:src="@drawable/back_row"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginTop="3dp"
+             android:tint="@color/white_color"
+             />
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_color"
+        android:text="التالي "
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/cairobold"
+
+        />
+
+     </LinearLayout>
+
+</RelativeLayout>

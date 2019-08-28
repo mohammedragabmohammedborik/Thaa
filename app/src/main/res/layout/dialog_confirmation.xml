@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="360dp"
+
+
+    android:layout_height="180dp"
+
+    android:background="@drawable/shape_normal_edit_text"
+
+
+    >
+    <ImageView
+        android:id="@+id/close_i"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_i"
+        />
+
+    <TextView
+        android:id="@+id/maindialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="ادخل البريد الالكتروني الخاص بك"
+        app:fontFamily="@font/cairobold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/dialog_text_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="ادخل البريد الالكتروني الخاص بك"
+        app:fontFamily="@font/cairo_regular"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+
+
+
+
+
+
+</LinearLayout>
