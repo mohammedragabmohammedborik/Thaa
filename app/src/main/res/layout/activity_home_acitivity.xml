@@ -9,11 +9,8 @@
     tools:openDrawer="end"
     android:layoutDirection="rtl"
     android:focusableInTouchMode="true"
-
-
     android:clipToPadding="false"
     >
-
     <include layout="@layout/activity_home_container"
 
         />

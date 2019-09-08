@@ -6,13 +6,6 @@
     android:layout_height="match_parent"
     android:layoutDirection="rtl"
     >
-
-
-
-
-
-
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
@@ -20,8 +13,6 @@
         android:background="@drawable/re_toolbar"
         android:theme="@style/ToolbarTheme"
         >
-
-
         <TextView
             android:id="@+id/text_barhome"
             android:layout_width="match_parent"
@@ -30,12 +21,9 @@
             android:gravity="center"
             android:textColor="@color/white_color"
             android:textSize="18sp"
-
             app:fontFamily="@font/cairobold" />
 
-
     </androidx.appcompat.widget.Toolbar>
-
 
     <fragment
         android:layout_below="@+id/toolbar2"
@@ -45,9 +33,4 @@
         android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
-
-
-
-
-
 </RelativeLayout>

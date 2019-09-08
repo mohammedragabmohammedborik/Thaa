@@ -36,7 +36,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UserProfile extends Fragment {
 
-
     Unbinder unbinder;
     @BindView(R.id.imageView6)
     FrameLayout imageView6;

@@ -12,70 +12,34 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public  class APIClient {
 
-    private  Retrofit retrofit = null;
+    private static APIClient mInstance;
+    private Retrofit retrofit;
 
-
-
-//  m n  static CookieJar cookieJar = new CookieJar() {
-//        private final HashMap<String, List<Cookie>> cookieStore = new HashMap<>();
-//
-//        @Override
-//        public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
-//            cookieStore.put(url.host(), cookies);
-//        }
-//
-//        @Override
-//        public List<Cookie> loadForRequest(HttpUrl url) {
-//            List<Cookie> cookies = cookieStore.get(url.host());
-//            return cookies != null ? cookies : new ArrayList<Cookie>();
-//        }
-//    };
-
-
-    private  OkHttpClient buildClient( Context context) {
-        return new OkHttpClient
+    private APIClient() {
+        OkHttpClient client = new OkHttpClient
                 .Builder()
                 .connectTimeout(50, TimeUnit.SECONDS)
                 .writeTimeout(50, TimeUnit.SECONDS)
                 .readTimeout(50, TimeUnit.SECONDS)
                 .addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
-                .addInterceptor(new ReceivedCookiesInterceptor(context))
+                .build();
+
+        retrofit = new Retrofit.Builder()
+                .baseUrl("")
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(client)
                 .build();
     }
 
-        public   Retrofit  getClient(Context context) {
-
-
-// m           OkHttpClient client = new OkHttpClient();
-//
-//            HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-//            interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-//
-//            OkHttpClient.Builder builder = new OkHttpClient.Builder();
-//          builder.addInterceptor(new AddCookiesInterceptor(context)); // VERY VERY IMPORTANT
-//           builder.addInterceptor(new ReceivedCookiesInterceptor(context));
-//            builder.addInterceptor(interceptor);
-//
-//
-//            client = builder.build();
-//
-
-
-            if(retrofit == null) {
-
-                retrofit = new Retrofit.Builder()
-                        .baseUrl("https://elber.amr-work.dtagdev.com/")
-                        .addConverterFactory(GsonConverterFactory.create())
-                        .client(buildClient(context))
-                        .build();
-
-            }
-
-        return retrofit;
+    public static synchronized APIClient getInstance() {
+        if (mInstance == null) {
+            mInstance = new APIClient();
+        }
+        return mInstance;
     }
 
-    public  ApiInterface getApi(Context context){
-        return (ApiInterface) getClient(context ).create(ApiInterface.class);
+    public ApiInterface apiInterface() {
+        return retrofit.create(ApiInterface.class);
     }
 
 }
